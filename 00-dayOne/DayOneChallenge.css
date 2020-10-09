@@ -1,0 +1,31 @@
+h1 {
+    color: lightgray; 
+    text-align: center;
+}
+
+h3 {
+    color: blue;
+    font-weight: 1;
+}
+
+p {
+    color: red;
+    text-align: center;
+}
+
+.option {
+    border: 3px solid black;
+    border-radius: 1em;
+    padding: .25em;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#truthLie {
+    color: pink;
+    border: 4px solid black
+}
+
+body {
+    background-color: gray;
+}
