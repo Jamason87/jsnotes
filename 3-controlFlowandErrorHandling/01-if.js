@@ -12,7 +12,11 @@ if (isOn == false){
     console.log("The light is off")
 };
 
-let weather = 65;
+if (!isOn) {
+    console.log("The light is off");
+}
+
+let weather = 71;
 
 if (weather < 70) {
     console.log('Wear a jacket');
@@ -20,7 +24,7 @@ if (weather < 70) {
 
 if (weather < 70) {
     console.log("Wear a jacket");
-} else { // else can follow and if statement and will fire
+} else { // else can follow an if statement and will fire
     // if the above statements didn't
     console.log("No jacket necessary!");
 };
@@ -28,7 +32,7 @@ if (weather < 70) {
 //* SWITCH
 let officeCharacter = 'Pam';
 
-switch (officCharacter) {
+switch (officeCharacter) {
     // kinda like if officeCharacter == "Michael"
     case "Michael":
         console.log("My mind is going a mile an hour");
@@ -43,7 +47,7 @@ switch (officCharacter) {
         console.log(`I'm sorry, ${officeCharacter}, but do I know you`);
 }
 
-let dessert = 'carrots';
+let dessert = 'pie';
 
 switch (dessert) {
     case 'pie':
@@ -60,15 +64,22 @@ switch (dessert) {
 }
 
 //* else if tangent
+
+let dessert = 'pie';
 if (dessert == "cake") {
     console.log('Cake is great!');
 } else if (dessert == "ice cream") {
     console.log('I scream for ice cream!');
+} else if(dessert == 'pie') {
+    console.log('Oh my it\'s a pie');
 } else {
-    console.log('Not on the menu.');
+    console.log('You don\'t have my dessert');
 }
 
 //* TERNARY
-let num = 6;
+let num = 2;
 // () ? true : false
 (num > 0) ? console.log('yes') : console.log('no');
+
+let isAccess = false;
+(isAccess) ? console.log ('Cubs') : console.log('Reds');
